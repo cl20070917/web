@@ -1,0 +1,46 @@
+/*search form*/
+.zm_search{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.zm_search form{
+    position: relative;
+}
+.zm_search form .search_input{
+    background: #fff;
+    border: 1px solid #069;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.zm_search form .search_btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 34px;
+    background: #069;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 0 6px 6px 0;
+}
+
+/*��������*/
+.zm_order{
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    padding: 0 10px;
+}
+.zm_order a{
+    font-size: 12px;
+    color: #333;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.zm_order a.now{
+    color: darkorange;
+}
