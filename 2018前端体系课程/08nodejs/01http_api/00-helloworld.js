@@ -1,3 +1,3 @@
 var foo = 'hello nodejs'
 
-console.log(foo)
+console.log(foo+"hest")
