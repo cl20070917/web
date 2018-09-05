@@ -1,0 +1,13 @@
+/*������*/
+.zm_nav{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.zm_nav a{
+    float: left;
+    width: 33.3333%;
+}
+.zm_nav a img{
+    width: 100%;
+    display: block;
+}

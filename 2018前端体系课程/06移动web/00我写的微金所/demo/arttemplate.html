@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--用于展示模版的位置-->
+		<div id="area"></div> 
+		​
+		<script src="../lib/artTemplate/template-native.js"></script>
+		<!--用于存放模版-->
+		<script id="template" type="text/html"> 
+		    <div>
+		        <% for(i=0;i<content.length;++i) {%>
+			        <h1>
+			        	<%=content[i].province%>
+			        </h1>
+		            <% for(j=0 ; j<content[i].city.length ; ++j){%>
+		            	<p><%=content[i].city[j]%></p>
+		            <%}%>
+		        <%}%>
+		    </div>
+		</script>
+		<!--用于渲染模版-->
+		<script>
+		  var data={
+		    content:[
+		      {province:'四川',city:['成都','绵阳','自贡']},
+		      {province:'广东',city:['广州','东莞','佛山']},
+		      {province:'海南',city:['海口','三亚']}
+		    ]
+		  };
+		  var html=template('template',data);
+		  document.getElementById('area').innerHTML=html
+		</script>
+	</body>
+</html>
